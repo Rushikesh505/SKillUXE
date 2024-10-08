@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch Job Search</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SkillMatch</div>
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Take Tests</a>
+            <a href="rank.html">RankBoard</a>
+            <a href="#">History</a>
+        </nav>
+        <button class="signin">Profile</button>
+    </header>
+
+    <main>
+        <section class="job-search">
+            <h1>Refine Job Search</h1>
+            <div class="form-group">
+                <label>Skill Level</label>
+                <select>
+                    <option>Beginner</option>
+                    <option>Slow Learner</option>
+                    <option>Medium</option>
+                    <option>Fast Teaching</option>
+                    <option>Hard</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="industry">Select Industry</label>
+                <select id="industry" name="industry" class="form-control">
+                    <option value="it_software">Information Technology & Software Development</option>
+                    <option value="engineering">Engineering</option>
+             
+                    <option value="education_training">Education & Training</option>
+                    
+                    <option value="arts_creative_services">Arts & Creative Services</option>
+                    <option value="science_research">Science & Research</option>
+                    <option value="customer_service">Customer Service</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Desired Course</label>
+                <input type="text" placeholder="e.g. Python Certification">
+            </div>
+            <div class="form-group">
+                <label for="company">Select Company</label>
+                <select id="company" name="company" class="form-control">
+                    <!-- Information Technology (IT) & Software Development -->
+                    <option value="microsoft">Microsoft</option>
+                    <option value="google">Google (Alphabet)</option>
+                    <option value="apple">Apple</option>
+                    <option value="ibm">IBM</option>
+                    <option value="oracle">Oracle</option>
+                    <option value="aws">Amazon Web Services (AWS)</option>
+                    <option value="sap">SAP</option>
+                    <option value="adobe">Adobe</option>
+                    <option value="intel">Intel</option>
+                    <option value="cisco">Cisco</option>
+                    <!-- Engineering -->
+                    <option value="general_electric">General Electric (GE)</option>
+                    <option value="siemens">Siemens</option>
+                    <option value="honeywell">Honeywell</option>
+                    <option value="bosch">Bosch</option>
+                    <option value="lockheed_martin">Lockheed Martin</option>
+                    <option value="northrop_grumman">Northrop Grumman</option>
+                    <option value="raytheon">Raytheon Technologies</option>
+                    <option value="caterpillar">Caterpillar</option>
+                    <option value="abb">ABB Group</option>
+                    <option value="rolls_royce">Rolls-Royce</option>
+                    <!-- Retail & E-Commerce -->
+                    <option value="amazon">Amazon</option>
+                    <option value="walmart">Walmart</option>
+                    <option value="alibaba">Alibaba</option>
+                    <option value="ebay">eBay</option>
+                    <option value="target">Target</option>
+                    <option value="costco">Costco</option>
+                    <option value="best_buy">Best Buy</option>
+                    <option value="home_depot">Home Depot</option>
+                    <option value="shopify">Shopify</option>
+                    <option value="jd_com">JD.com</option>                   
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Experience Level</label>
+                <div class="toggle-group" id="experience">
+                    <div class="toggle-option" data-value="entry">Entry Level</div>
+                    <div class="toggle-option" data-value="mid">Mid Level</div>
+                    <div class="toggle-option" data-value="senior">Senior Level</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Employment</label>
+                <div class="toggle-group" id="employment">
+                    <div class="toggle-option multi" data-value="full">Full-time</div>
+                    <div class="toggle-option multi" data-value="part">Part-time</div>
+                    <div class="toggle-option multi" data-value="remote">Remote Work</div>
+                    <div class="toggle-option multi" data-value="freelance">Freelance</div>
+                    <div class="toggle-option multi" data-value="internship">Internship</div>
+                </div>
+            </div>
+            <button class="find-matches">Find Matches</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>My SkillMatch Profile</h3>
+            <p>Trusted since 2021</p>
+        </div>
+        <div class="footer-section">
+            <h3>Get started today and</h3>
+            <ul>
+                <li>Explore job opportunities</li>
+                <li>Contact us for any inquiries</li>
+                <li>Read our blog</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Join our community of</h3>
+            <ul>
+                <li>Find answers</li>
+                <li>Upgrade to SkillMatch</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow us on social</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

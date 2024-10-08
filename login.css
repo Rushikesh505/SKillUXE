@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.left, .right {
+    padding: 40px;
+    flex: 1;
+}
+
+.left {
+    background-color: #00000000;
+}
+
+.right {
+    background-color: #2e7d32;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.social-signup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-signup button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.twitter {
+    background-color: #efeaea4e;
+    color: #ffffff3b;
+}
+
+.soccer-ball {
+    width: 100px;
+    height: 100px;
+    background: url('soccer-ball.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.left {
+    background-color: #00000000;
+}
+
+.right {
+    background-color: #2e7d32;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}

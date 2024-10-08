@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script
+      src="https://kit.fontawesome.com/f6816dd194.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <navbar id="nav" class="nav">
+      <div class="logo-container">
+        <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <button class="btn" id="btn" onclick="expand();">
+          <i id="icon" class="fas fa-bars fa-2x"></i>
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </navbar>
+    <!-- navbar end -->
+
+    <!-- main section -->
+    <section class="main" id="main">
+      <div class="left">
+        <p class="heading">Find Your Dream Job And Excel In Your Career</p>
+        <a href="login.html"><button class="btn2">Login Now</button></a>
+      </div>
+      <div class="right">
+        <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\mainimg.png" alt="" />
+      </div>
+    </section>
+    <!-- main section end-->
+
+    <!-- about section -->
+    <section class="about">
+      <p>About Us</p>
+      <div class="card-container">
+        <div class="card">
+          <h1 class="cardheading">1.Skill-Based Profiling</h1>
+          <h3 class="cardtext">
+            Empower job seekers by allowing them to 
+            showcase their skills through detailed profiles. 
+            Each profile highlights individual strengths and expertise, 
+            providing a clear picture of qualifications and capabilities. 
+            This system allows employers to assess candidates based on
+             real skills and achievements.
+          </h3>
+        </div>
+        <div class="card">
+          <h1 class="cardheading">2.Test and Rank</h1>
+          <h3 class="cardtext">
+            Candidates can take tailored tests under specific
+            companies in their desired fields. These assessments
+            help job seekers refine their skill sets while giving
+            companies access to a ranking board that objectively 
+            compares candidates. It simplifies the selection process
+            by matching the most suitable candidates to employer needs.
+          </h3>
+        </div>
+        <div class="card">
+          <h1 class="cardheading">3.Smart Job Matching</h1>
+          <h3 class="cardtext">
+            Our platform uses a skill rating system to connect 
+            companies with the right talent. This feature helps
+             businesses identify top candidates, streamlining 
+             recruitment by ranking profiles according to their
+              skill levels and relevance to the job. It ensures that both 
+              job seekers and employers find their perfect match efficiently.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- about section end-->
+
+    <!-- main section2 -->
+    <section class="main2">
+      <div class="left">
+        <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\main2.jpg" alt="" />
+      </div>
+      <div class="right">
+        <p class="main2Heading">
+            To use the platform, users first need to sign up and create a comprehensive profile that includes their educational background, work experience, and key skills. Once registered, they can browse various courses and tests offered by companies in their desired field. By enrolling in these courses and taking the tests, users can showcase their abilities, which are then evaluated and translated into skill ratings. These ratings enhance their profiles and increase their visibility to potential employers. After completing the tests, users are ranked on a board where companies can easily compare candidates based on their skills. This helps businesses identify the most suitable talent, while users receive job suggestions tailored to their skill set, making it easier for them to apply for positions that match their qualifications..
+        </p>
+      </div>
+    </section>
+    <!-- main section2 end-->
+
+    <!-- slider -->
+    <section class="slider">
+      <p class="sliderHeading">Our Team Member</p>
+      <div class="slider-card-container">
+        <div class="slider-card">
+          <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\user.png" alt="">
+          <h1 class="cardheading">PR</h1>
+        </div>
+        <div class="slider-card">
+          <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\user.png" alt="">
+          <h1 class="cardheading">SV</h1>
+        </div>
+        <div class="slider-card">
+          <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\user.png" alt="">
+          <h1 class="cardheading">AN</h1>
+        </div>
+        <div class="slider-card">
+          <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\user.png" alt="">
+          <h1 class="cardheading">HN</h1>
+        </div>
+        <div class="slider-card">
+          <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\user.png" alt="">
+          <h1 class="cardheading">RK</h1>
+        </div>
+        <div class="slider-card">
+          <img src="C:\Users\rushi\OneDrive\Desktop\SIP TEST-1\user.png" alt="">
+          <h1 class="cardheading">MN</h1>
+        </div>
+      </div>
+    </section>
+    <!-- slider end-->
+
+    <!-- contact -->
+    <div class="contact-container">
+      <input type="text" name="email" placeholder="Enter Email....">
+      <input type="password" name="password" placeholder="Enter Password....">
+      <textarea type="Write the review about our Website" name="hello" cols="100" rows="8" placeholder="Write a review about our Website"></textarea>
+      <button class="submit-btn">Submit</button>
+    </div>
+    <!-- contact end-->
+
+    <div class="blankDiv"></div>
+
+    <script>
+      const nav = document.getElementById("nav");
+      const main = document.getElementById("main");
+      const icon = document.getElementById("icon");
+      const expand = (e) => {
+        nav.classList.toggle("active");
+        main.classList.toggle("activeMain");
+        console.log(main.style.top);
+        console.log(main.style.top);
+        if (icon.classList.contains("fa-bars")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      };
+    </script>
+  </body>
+</html>

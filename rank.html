@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Board</title>
+    <link rel="stylesheet" href="rank.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>CareerBoost</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="#">View Companies</a></li>
+                    <li><a href="#">Take Tests</a></li>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="home.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="filter-section">
+                    <h1>Ranking Board</h1><br>
+                    <div class="filters">
+                        <select id="skill-filter">
+                            <option value="All">All Skills</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                        </select>
+                        <select id="level-filter">
+                            <option value="All">All Levels</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Mid">Mid</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button class="sort-btn" id="sort-rating-btn">
+                        Sort by Rating 
+                        <span id="sort-icon">&#9660;</span> <!-- Downward arrow as the default -->
+                    </button>
+                    
+                </div>
+            </header>
+
+            <section class="candidate-list" id="candidate-list">
+                <div class="candidate" data-rating="4.8" data-skills="JavaScript, Python" data-level="Mid">
+                    <div class="profile-info">
+                        <img src="john-smith.jpg" alt="John Smith">
+                        <div class="info">
+                            <h2>John Smith</h2>
+                            <p>JavaScript, Python</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span>Rating: 4.8</span>
+                        <button><a href="viewprofile1.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="candidate" data-rating="4.7" data-skills="Java, Python" data-level="Mid">
+                    <div class="profile-info">
+                        <img src="jane-doe.jpg" alt="Jane Doe">
+                        <div class="info">
+                            <h2>Jane Doe</h2>
+                            <p>Java, Python</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span>Rating: 4.7</span>
+                        <button><a href="viewprofile1.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="candidate" data-rating="4.6" data-skills="JavaScript, Java" data-level="Senior">
+                    <div class="profile-info">
+                        <img src="michael-lee.jpg" alt="Michael Lee">
+                        <div class="info">
+                            <h2>Michael Lee</h2>
+                            <p>JavaScript, Java</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span>Rating: 4.6</span>
+                        <button><a href="viewprofile1.html">View Profile</a></button>
+                    </div>
+                </div>
+
+                <div class="candidate" data-rating="4.5" data-skills="Python" data-level="Junior">
+                    <div class="profile-info">
+                        <img src="sarah-williams.jpg" alt="Sarah Williams">
+                        <div class="info">
+                            <h2>Sarah Williams</h2>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span>Rating: 4.5</span>
+                        <button><a href="viewprofile1.html">View Profile</a></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="rank.js"></script>
+</body>
+</html>

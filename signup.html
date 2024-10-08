@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBoost - Profile Creation</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="sidebar">
+        
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Log in</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <section class="form-section">
+            <h2>Sign Up / Profile Creation</h2>
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Business Number">CONTACT-1</label>
+                        <input type="text" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Personal Number">CONTACT-2</label>
+                        <input type="text" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume</label>
+                    <input type="file" id="resume">
+                </div>
+
+                <div class="form-group">
+                    <label for="desiredCourses">Desired Courses</label>
+                    <select id="desiredCourses">
+                        <option>Web Development</option>
+                        <option>Data Science</option>
+                        <option>Machine Learning</option>
+                        <option>Cloud Computing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="desiredCompanies">Desired Companies</label>
+                    <select id="desiredCompanies">
+                        <option>Google</option>
+                        <option>Amazon</option>
+                        <option>Microsoft</option>
+                        <option>Facebook</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="skill1">Skills and Ratings</label>
+                    <div class="skill-rating">
+                        <input type="text" id="skill1" placeholder="Skill">
+                        <input type="number" max="10" min="1" value="1">
+                    </div>
+                    <div class="skill-rating">
+                        <input type="text" id="skill2" placeholder="Skill">
+                        <input type="number" max="10" min="1" value="1">
+                    </div>
+                    <div class="skill-rating">
+                        <input type="text" id="skill2" placeholder="Skill">
+                        <input type="number" max="10" min="1" value="1">
+                    </div>
+                    <div class="skill-rating">
+                        <input type="text" id="skill2" placeholder="Skill">
+                        <input type="number" max="10" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="PassWord">Enter Your Password</label>
+                        <input type="password" id="password" placeholder="password">
+                    </div>
+                </div>
+
+                <button type="submit"><a href="main.html">Create Profile</a></button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

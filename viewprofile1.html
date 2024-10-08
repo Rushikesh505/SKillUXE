@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="viewprofile.css">
+    <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="toggle-sidebar">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="sidebar-menu">
+                <li><a href="#connections" class="sidebar-link">Connections</a></li>
+                <li><a href="#professionals" class="sidebar-link">Professionals</a></li>
+                <li><a href="#interests" class="sidebar-link">Interests</a></li>
+                <li><a href="#companies" class="sidebar-link">Companies</a></li>
+                <li><a href="#rank-board" class="sidebar-link">Rank Board</a></li>
+                <li><a href="#portfolio" class="sidebar-link">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <h1>Your Profile</h1>
+            <div class="profile-overview">
+                <div class="profile-info">
+                    <h2 id="connections">Profile Overview</h2>
+                    <p><strong>Name:</strong> <span class="profile-name"></span></p>
+                    <p><strong>Email:</strong> <span class="profile-email"></span></p>
+                    <p><strong>Skill Rating:</strong> ★★★★☆</p>
+                    
+                    <div class="skill-bar-container">
+                        <h3 id="skills">Skills</h3>
+                        <div class="skill-bar" id="skill-webdev">Web Development</div>
+                    </div>
+
+                    <h3 id="interests">Interests</h3>
+                    <p>Select the sectors you are interested in:</p>
+
+                    <h3 id="companies">Companies</h3>
+                    <p>Companies looking for talent in your selected sectors:</p>
+
+                    <h3 id="rank-board">Rank Board</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Profile</th>
+                                <th>Tests</th>
+                                <th>Skill Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>Web Development</td>
+                                <td>★★★★☆</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 id="portfolio">Portfolio</h3>
+                    <p>Attach your Achievements, Certificates, Skills, Projects, Experience:</p>
+                </div>
+
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <img src="" alt="Profile Picture" class="animated-picture">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="viewprofile.js"></script>
+</body>
+
+</html>
